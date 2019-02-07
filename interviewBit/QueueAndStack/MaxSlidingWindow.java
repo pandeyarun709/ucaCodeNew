@@ -21,7 +21,7 @@ public class MaxSlidingWindow {
 		{
 			l.add(a[d.peek()]);
 			
-			while(!d.isEmpty() && d.peek() >= i-k)
+			while(!d.isEmpty() && d.peek() <= i-k)
 				 d.removeFirst();
 			
 			while(!d.isEmpty() && a[i] >= a[d.peekLast()])
