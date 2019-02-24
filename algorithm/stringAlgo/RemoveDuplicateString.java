@@ -30,7 +30,7 @@ public class RemoveDuplicateString {
 				
 				len++;
 				
-				hash = hash | (1 << idx); //on the bit at position where character visited
+				hash = hash | (1 << idx); //bit on "1" at position where character visited
 				
 				
 			}
