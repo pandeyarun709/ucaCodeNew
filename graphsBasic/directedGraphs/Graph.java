@@ -10,6 +10,7 @@ public class Graph {
 	{
 		this.V = V;
 		E=0;
+		adj = new LinkedList[V+1];
 		for(int i=0;i<V;i++) {
 			adj[i] = new LinkedList<>();
 		}
@@ -17,10 +18,10 @@ public class Graph {
 	
 	public void addEdge(int u,int v) {
 		
-		if(u!=v)
+		//if(u!=v)
 			adj[u].add(v);
 		
-		 adj[v].add(u);
+		 //adj[v].add(u);
 	}
 	
 	public int E() {
