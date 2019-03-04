@@ -1,6 +1,9 @@
 package treePractice;
- import com.uca.ds.Tree.bst.*;
-public class DeleteNodeInBst extends BST {
+
+
+
+
+public class DeleteNodeInBst  {
 	
 	private static Node smallest(Node root )
     {
@@ -16,7 +19,7 @@ public class DeleteNodeInBst extends BST {
         return smallest(root.left);
     }
     
-    Node deleteNode(Node root, K key) 
+    Node deleteNode(Node root, int key) 
     {
 	// Your code here
 	   if(root == null)
@@ -48,6 +51,21 @@ public class DeleteNodeInBst extends BST {
 	   return root;
 	   
 	      
+    }
+    
+    
+    
+    /*--------------------------------- */
+    class Node{
+    	private int key;
+    	private Node left;
+    	private Node right;
+    	
+    	public Node(int k)
+    	{
+    		this.key = k;
+    	}
+    	
     }
 
 }
