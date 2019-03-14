@@ -55,7 +55,7 @@ For example, the following tree
 should be changed to
 
        20(4-2+12+6)
-          /         \
+          /       \
      4(8-4)      12(7+5)
        /   \        /  \
      0      0       0    0
