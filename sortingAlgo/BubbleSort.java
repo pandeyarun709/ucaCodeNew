@@ -21,10 +21,11 @@ public class BubbleSort {
 				}
 			}
 			
-			if(!flag) break; // if flag remains false its mean that array get sorted so we don't need further iteration
+			if(!flag) 
+				break; // if flag remains false its mean that array get sorted so we don't need further iteration
 			
 			flag =false;
-			System.out.println("br " + Arrays.toString(arr));
+			System.out.println("checking loops " + Arrays.toString(arr));
 		}
 	}
 
