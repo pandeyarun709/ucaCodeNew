@@ -1,5 +1,7 @@
 package treePractice;
 
+import java.util.ArrayList;
+
 public class RootToLeafSumEqual_K {
 
     public  void getPaths(TreeNode root , int sum , int B , ArrayList<Integer> a,ArrayList<ArrayList<Integer>> res)
@@ -55,5 +57,16 @@ public class RootToLeafSumEqual_K {
         getPaths(A , 0 , B , new ArrayList<Integer>() ,res);
         
         return res;
+    }
+    
+    private class TreeNode {
+    	int val;
+    	TreeNode left;
+    	TreeNode right;
+    	
+    	public TreeNode(int data)
+    	{
+    		this.val = data;
+    	}
     }
 }
